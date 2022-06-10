@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatinho Maker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Gatinho Maker</h1>
+    <div class="game">
+
+        <div class="display">
+
+            <canvas id="canvas" width="600" height="600"></canvas>
+
+        </div>
+
+        <div class="controllers">
+
+            <div class="asa">
+                <button class="asa-left" onclick="asaLeft()">asa left</button>
+                <button class="asa-right" onclick="asaRight()">asa right</button>
+            </div>
+
+            <div class="gatinnho">
+                <button class="gatinnho-left" onclick="gatinhoLeft()">gatinnho left</button>
+                <button class="gatinnho-right" onclick="gatinhoRight()">gatinnho right</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="display:none">
+    
+        <img id="gatinhos-sprite" src="assets/gatinhos.png">
+        <img id="asas-sprite"src="assets/asas.png" >
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
