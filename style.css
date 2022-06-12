@@ -2,33 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(255, 226, 254);
 }
 
-h1{
+h1, h2{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 40, 93);
+    margin: 10px;
 }
+
 
 .game{
-    background-color: rgb(252, 232, 206);
-    width: 1200px;
-    height: 700px;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
+canvas{
+    margin: 0 auto;
+}
+
 .display{
-    width: 600px;
-    height: 600px;
-    border: solid black 1px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
 }
 
 .controllers{
-    width: 450px;
+    width: 20vw;
     height: 600px;
-    border: solid rgb(255, 183, 183) 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.asa , .gatinnho{
+    border: solid black 1px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 140px;
+}
 
+.asa img, .gatinnho img{
+    height: 50px;
+}
 
+.flip{
+    transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 600px) {
+    .game{
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }

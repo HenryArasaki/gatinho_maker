@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatinho Maker</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,13 +28,21 @@
         <div class="controllers">
 
             <div class="asa">
-                <button class="asa-left" onclick="asaLeft()">asa left</button>
-                <button class="asa-right" onclick="asaRight()">asa right</button>
+                <h2>Asa</h2>
+                <button class="asa-left" onclick="asaLeft()">
+                    <img src="assets/arrow.png" class="flip"></button>
+                <button class="asa-right" onclick="asaRight()">
+                    <img src="assets/arrow.png">
+                </button>
             </div>
 
             <div class="gatinnho">
-                <button class="gatinnho-left" onclick="gatinhoLeft()">gatinnho left</button>
-                <button class="gatinnho-right" onclick="gatinhoRight()">gatinnho right</button>
+                <h2>Gatinho</h2>
+                <button class="gatinnho-left" onclick="gatinhoLeft()">
+                    <img src="assets/arrow.png" class="flip"></button>
+                <button class="gatinnho-right" onclick="gatinhoRight()">
+                    <img src="assets/arrow.png">
+                </button>
             </div>
 
         </div>
@@ -38,9 +50,9 @@
     </div>
 
     <div style="display:none">
-    
+
         <img id="gatinhos-sprite" src="assets/gatinhos.png">
-        <img id="asas-sprite"src="assets/asas.png" >
+        <img id="asas-sprite" src="assets/asas.png">
 
     </div>
 
